@@ -24,8 +24,6 @@ if __name__ == '__main__':
         Settings.HIDE_UI    = True if sys.argv[2].lower() == 'true' else False
         User.USERNAME       = sys.argv[3]
         User.PASSWORD       = sys.argv[4]
-        User.ROLE           = sys.argv[5]
-        Settings.IMPORT_TYPE    = int(sys.argv[6])
 
     runner = unittest.TextTestRunner()
     result = runner.run(suite())
